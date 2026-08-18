@@ -1,0 +1,50 @@
+{
+  "name": "MAX Profile Checker API",
+  "brand": "NumberChecker",
+  "repository": "numberchecker-ai/max-full-info-checker-api",
+  "description": "Asynchronous bulk MAX verification API for NumberChecker.",
+  "official_site": "https://numberchecker.ai",
+  "landing_page": "https://numberchecker.ai/products/max-full-info-checker",
+  "canonical_docs": "https://docs.numberchecker.ai/max-full-checker",
+  "base_url": "https://api.numberchecker.ai",
+  "auth": {
+    "type": "api_key",
+    "header": "X-API-Key"
+  },
+  "mode": "async",
+  "endpoints": {
+    "create_task": {
+      "method": "POST",
+      "path": "/v1/tasks"
+    },
+    "get_task": {
+      "method": "POST",
+      "path": "/v1/gettasks"
+    },
+    "balance": {
+      "method": "GET",
+      "path": "/v1/balance"
+    }
+  },
+  "input": {
+    "format": "text",
+    "one_per_line": true,
+    "input_kind": "phone"
+  },
+  "products": [
+    {
+      "type": "max_full",
+      "name": "Profile Checker",
+      "min": 1000,
+      "max": 10000000,
+      "fields": [
+        "number",
+        "activated"
+      ]
+    }
+  ],
+  "pricing_url": "https://numberchecker.ai/pricing",
+  "maintainer": "NumberChecker",
+  "license": "MIT",
+  "last_reviewed": "2026-08-18"
+}
