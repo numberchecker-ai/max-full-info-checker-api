@@ -48,7 +48,8 @@
       ],
       "fields_note": "CSV header read from the current signed-in sample endpoint on 2026-10-30; preserve exact order and duplicate names.",
       "min_billable_numbers": 1000,
-      "available": true
+      "available": true,
+      "product_id": 59
     }
   ],
   "pricing_url": "https://numberchecker.ai/pricing",
