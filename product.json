@@ -35,16 +35,24 @@
     {
       "type": "max_full",
       "name": "Profile Checker",
-      "min": 1000,
+      "min": 1,
       "max": 10000000,
       "fields": [
         "number",
-        "activated"
-      ]
+        "activated",
+        "id",
+        "name",
+        "gender",
+        "last_seen",
+        "avatar"
+      ],
+      "fields_note": "CSV header read from the current signed-in sample endpoint on 2026-10-30; preserve exact order and duplicate names.",
+      "min_billable_numbers": 1000,
+      "available": true
     }
   ],
   "pricing_url": "https://numberchecker.ai/pricing",
   "maintainer": "NumberChecker",
   "license": "MIT",
-  "last_reviewed": "2026-08-18"
+  "last_reviewed": "2026-10-30"
 }
